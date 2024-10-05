@@ -1,10 +1,8 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
+
   background(0);
 
-  noFill();
-  stroke(255);
 
   // parLineCircle(500,500,500,50);
   // parLineBox(100,100,100,300,20);
@@ -12,6 +10,8 @@ function setup() {
   let pitch = 100;
   let sqDim = 0.45 * pitch;
 
+  noFill();
+  
   translate(pitch / 2, pitch / 2);
 
   for (let y = 0; y < height; y += pitch) {
